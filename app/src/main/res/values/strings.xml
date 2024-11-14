@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Sewing Shop</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="productListTitle">Список товарів</string>
 </resources>
