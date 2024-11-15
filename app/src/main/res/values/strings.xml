@@ -3,4 +3,28 @@
     <string name="home">Home</string>
     <string name="cart">Cart</string>
     <string name="productListTitle">Список товарів</string>
+    
+    <string-array name="product_names">
+        <item>Худі з ведмедиком</item>
+        <item>Мішкуваті джинси оверсайз</item>
+        <item>Легка базова стьобана куртка</item>
+    </string-array>
+
+    <string-array name="product_descriptions">
+        <item>Бавовняне худі із зображенням ведмедика та кишенею-кенгуру спереду.</item>
+        <item>Мішкуваті джинси оверсайз із п’ятьма кишенями, петельками для ременя та акцентованими швами. Застібаються на блискавку та ґудзик.</item>
+        <item>Базова легка стьобана куртка з капюшоном. Застібається на блискавку та доступна в різних кольорах.</item>
+    </string-array>
+
+    <integer-array name="product_codes">
+        <item>7590428</item>
+        <item>7684370</item>
+        <item>7711333</item>
+    </integer-array>
+
+    <string-array name="product_prices">
+        <item>1,299 грн</item>
+        <item>1,499 грн</item>
+        <item>1,149 грн</item>
+    </string-array>
 </resources>
