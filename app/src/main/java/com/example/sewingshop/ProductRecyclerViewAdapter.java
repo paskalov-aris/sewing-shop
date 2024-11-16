@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -43,7 +44,12 @@ public class ProductRecyclerViewAdapter extends RecyclerView.Adapter<ProductRecy
             public void onClick(View v) {
                 Intent intent = new Intent(context, ProductDetailsActivity.class);
                 intent.putExtra("product", product);
-                context.startActivity(intent);
+
+                if (context instanceof AppCompatActivity) {
+                    ((AppCompatActivity) context).startActivityForResult(intent, 1);
+                } else {
+                    context.startActivity(intent);
+                }
             }
         });
     }
