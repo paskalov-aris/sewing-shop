@@ -3,7 +3,16 @@
     <string name="home">Home</string>
     <string name="cart">Cart</string>
     <string name="productListTitle">Список товарів</string>
-    
+    <string name="cartFragmentTitle">Корзина товарів</string>
+    <string name="addToCartButtonText">Додати в корзину</string>
+    <string name="viewCartButtonText">Переглянути корзину</string>
+    <string name="cartBuyButton">Придбати</string>
+    <string name="itemIsAddedToCart">Товар додано до корзини</string>
+    <string name="itemIsAlreadyInCart">Цей товар вже доданий в корзину</string>
+    <string name="purchasesDontWork">На жаль, покупки наразі не працюють</string>
+    <string name="cost">Вартість: %1$s</string>
+    <string name="articleNumber">Артикул: %1$s</string>
+
     <string-array name="product_names">
         <item>Худі з ведмедиком</item>
         <item>Мішкуваті джинси оверсайз</item>

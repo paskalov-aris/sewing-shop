@@ -1,8 +1,10 @@
 package com.example.sewingshop;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, 0);
             return insets;
         });
+
         replaceFragment(new HomeFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -43,6 +46,20 @@ public class MainActivity extends AppCompatActivity {
 
             return true;
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == RESULT_OK && data != null) {
+            boolean changeFragment = data.getBooleanExtra("changeFragmentToCart", false);
+            if (changeFragment) {
+                replaceFragment(new CartFragment());
+
+                binding.bottomNavigationView.setSelectedItemId(R.id.cart);
+            }
+        }
     }
 
     private void replaceFragment(Fragment fragment) {
