@@ -82,13 +82,14 @@ public class HomeFragment extends Fragment {
     private void setUpProducts() {
         String[] productNames = getResources().getStringArray(R.array.product_names);
         String[] productDescriptions = getResources().getStringArray(R.array.product_descriptions);
+        int[] productCodes = getResources().getIntArray(R.array.product_codes);
         String[] productPrices = getResources().getStringArray(R.array.product_prices);
 
         for (int i = 0; i < productNames.length; i++) {
             products.add(
                     new ProductModel(
                             productNames[i],
-                            123,
+                            productCodes[i],
                             productDescriptions[i],
                             productPrices[i],
                             productImages[i]

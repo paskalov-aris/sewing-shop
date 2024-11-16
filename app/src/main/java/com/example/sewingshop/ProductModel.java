@@ -1,6 +1,8 @@
 package com.example.sewingshop;
 
-public class ProductModel {
+import java.io.Serializable;
+
+public class ProductModel implements Serializable {
     String name;
     Integer code;
     String description;
